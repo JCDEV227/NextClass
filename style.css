@@ -16,9 +16,11 @@
   --text-dark: #1a1a1a;
   --text-gray: #4a4a4a;
   --text-light: #6a6a6a;
+  --background-app: background: linear-gradient(135deg, #ffff, #003BD8);
 
   /* Typography */
   --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-secondary: "Anton", sans-serif;
   --font-size-base: 16px;
   --font-size-small: 14px;
   --font-size-large: 18px;
@@ -64,6 +66,7 @@ html {
 
 body {
   font-family: var(--font-primary);
+  background: var(--background-app);
   color: var(--text-dark);
   line-height: 1.6;
   overflow-x: hidden;
@@ -189,9 +192,7 @@ ul {
    3. NAVIGATION
    ========================================== */
 .navbar {
-  background: var(--white);
   padding: var(--spacing-sm) 0;
-  box-shadow: var(--shadow-sm);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -235,7 +236,6 @@ ul {
    4. HERO SECTION
    ========================================== */
 .hero {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
   color: var(--white);
   padding: var(--spacing-xl) 0;
   text-align: center;
@@ -349,7 +349,6 @@ ul {
    ========================================== */
 .program-section {
   padding: var(--spacing-xxl) 0;
-  background: var(--white);
 }
 
 .section-title {
@@ -421,7 +420,6 @@ ul {
    ========================================== */
 .features-section {
   padding: var(--spacing-xxl) 0;
-  background: var(--light-blue);
 }
 
 .features-grid {
@@ -431,7 +429,6 @@ ul {
 }
 
 .feature-stat {
-  background: var(--white);
   padding: var(--spacing-lg);
   border-radius: var(--border-radius);
   text-align: center;
@@ -502,7 +499,6 @@ ul {
    ========================================== */
 .cases-section {
   padding: var(--spacing-xxl) 0;
-  background: var(--white);
 }
 
 .cases-grid {
@@ -632,7 +628,6 @@ ul {
    10. FOOTER
    ========================================== */
 .footer {
-  background: var(--primary-blue);
   color: var(--white);
   padding: var(--spacing-xl) 0;
   text-align: center;
@@ -705,13 +700,35 @@ ul {
   .ceo-bio {
     flex: 1;
   }
+
   .hero-content-main {
     display: flex;
     flex-direction: row;
-    
+
+  }
+
+  .hero-content-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-title {
+    font-family: var(--font-secondary);
+    text-align: left;
+    font-size: 6rem;
+  }
+
+  .highlight-number {
+    font-size: 12rem;
+  }
+
+  .contener-cta-button {
+    display: flex;
+    justify-content: left;
   }
 }
-
 
 /* ==========================================
    12. RESPONSIVE - DESKTOP (1024px+)
@@ -730,6 +747,7 @@ ul {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-lg);
   }
+
   .menu-toggle {
     display: none;
   }
@@ -741,36 +759,36 @@ ul {
 
 /* Menu Mobile Toggle */
 @media (max-width: 767px) {
-    .menu-toggle {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 10px;
-      z-index: 1001;
-    }
-    
-    .hamburger-line {
-      width: 25px;
-      height: 3px;
-      background: var(--primary-blue);
-      transition: var(--transition-medium);
-      border-radius: 2px;
-    }
-    
-    .menu-toggle.is-active .hamburger-line:nth-child(1) {
-      transform: rotate(45deg) translate(7px, 7px);
-    }
-    
-    .menu-toggle.is-active .hamburger-line:nth-child(2) {
-      opacity: 0;
-    }
-    
-    .menu-toggle.is-active .hamburger-line:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -7px);
-    }
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+  }
+
+  .hamburger-line {
+    width: 25px;
+    height: 3px;
+    background: var(--primary-blue);
+    transition: var(--transition-medium);
+    border-radius: 2px;
+  }
+
+  .menu-toggle.is-active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .menu-toggle.is-active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.is-active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
 }
 
 
@@ -803,7 +821,7 @@ ul {
   .nav-menu li {
     margin: var(--spacing-sm) 0;
   }
-} 
+}
 
 /* Botão Voltar ao Topo */
 .back-to-top {
@@ -860,4 +878,11 @@ ul {
 /* Body quando menu está aberto */
 body.menu-open {
   overflow: hidden;
+}
+
+
+/* Alteraçoes*/
+
+.hero-title {
+  font-family: var(--font-secondary);
 }
