@@ -12,11 +12,11 @@
   --primary-blue-dark: #2d4db8;
   --secondary-blue: #5B8EF5;
   --light-blue: #E8F0FE;
-  --white: #FFFFFF;
+  --white: #F4FCFF;
   --text-dark: #1a1a1a;
   --text-gray: #4a4a4a;
   --text-light: #6a6a6a;
-  --background-app: linear-gradient(to bottom, #BCC8CD, #2D60AC , #003BD8);
+  --background-app: linear-gradient(to bottom, #BCC8CD, #2D60AC, #003BD8);
 
   /* Typography */
   --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -112,9 +112,9 @@ ul {
 .highlight-number {
   font-size: 4rem;
   font-weight: 900;
-  color: var(--primary-blue);
+  color:#2D60AC;
   display: block;
-  line-height: 1; 
+  line-height: 1;
   padding: var(--spacing-sm) 0;
 }
 
@@ -311,6 +311,7 @@ ul {
   border: 2px solid rgba(255, 255, 255, 0.2);
   animation: fadeInUp 0.8s ease 0.6s both;
 }
+
 .trainers-badge span {
   font-weight: 700;
 }
@@ -328,6 +329,11 @@ ul {
   text-transform: uppercase;
   margin: var(--spacing-lg) 0;
   animation: fadeInUp 0.8s ease 0.8s both;
+}
+
+#bt2 {
+  background: var(--white);
+  color: rgb(45, 96, 172);
 }
 
 .cta-button:hover {
@@ -351,7 +357,9 @@ ul {
   font-weight: 700;
   text-align: center;
   margin-bottom: var(--spacing-xl);
-  color: #fff;
+  color: #F4FCFF;
+  line-height: 1.3;
+  font-family: var(--font-secondary);
 }
 
 .benefits-grid {
@@ -361,7 +369,7 @@ ul {
 }
 
 .benefit-card {
-  background:  rgba(45, 96, 172, 0.40);
+  background: rgba(45, 96, 172, 0.40);
   color: var(--white);
   padding: var(--spacing-lg);
   border-radius: var(--border-radius);
@@ -389,27 +397,29 @@ ul {
 
 .system-box {
   background: rgba(45, 96, 172, 0.60);
-  color: #BCC8CD;
+  color: #F4FCFF;
   padding: var(--spacing-xl);
   border-radius: var(--border-radius);
   margin-top: var(--spacing-xl);
 }
 
 .system-box h3 {
-  font-size: var(--font-size-h1);
+  font-size: var(--font-size-h2);
   margin-bottom: var(--spacing-lg);
   text-align: center;
   font-family: var(--font-secondary);
+  line-height: 1.1;
 }
 
 .system-illustration {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .icon-max {
-  width: 100px;
-  height: 100px;
+  width: 40%;
+  height: 100%;
   margin-left: 10px
 }
 
@@ -450,6 +460,8 @@ ul {
   text-align: center;
   box-shadow: var(--shadow-sm);
   transition: var(--transition-medium);
+  background: rgba(45, 96, 172, 0.40);
+  color: var(--white);
 }
 
 .feature-stat:hover {
@@ -458,7 +470,7 @@ ul {
 }
 
 .feature-stat h3 {
-  color: var(--primary-blue);
+  color: var(--white);
   font-size: var(--font-size-h3);
 }
 
@@ -586,7 +598,7 @@ ul {
 }
 
 .guarantee-box {
-  background: linear-gradient(135deg, #f44336 0%, #e91e63 100%);
+  background: rgba(45, 96, 172, 0.40);
   color: var(--white);
   padding: var(--spacing-xl);
   border-radius: var(--border-radius);
@@ -774,12 +786,36 @@ ul {
   }
 }
 
+#bt3 {
+  background: linear-gradient(135deg, #003BD8, #2D60AC);
+  color: var(--white);
+  text-align: center;
+}
+
+.content-bt2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 /* ==========================================
    CSS ADICIONAL PARA FUNCIONALIDADES JS
    ========================================== */
 
 /* Menu Mobile Toggle */
 @media (max-width: 767px) {
+
+  .system-illustration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .icon-max {
+    width: 100%;
+    height: 100%;
+  }
+
   .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -910,4 +946,8 @@ body.menu-open {
 
 .section-title {
   font-family: var(--font-secondary);
+}
+
+#about-title {
+  color:  #2D60AC;
 }
