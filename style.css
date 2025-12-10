@@ -232,6 +232,12 @@ ul {
   color: var(--primary-blue);
 }
 
+.text-small {
+  text-align: left;
+  font-size: var(--font-size-large);
+  color: var(--white);
+}
+
 /* ==========================================
    4. HERO SECTION
    ========================================== */
