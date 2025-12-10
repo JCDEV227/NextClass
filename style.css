@@ -16,7 +16,7 @@
   --text-dark: #1a1a1a;
   --text-gray: #4a4a4a;
   --text-light: #6a6a6a;
-  --background-app: background: linear-gradient(135deg, #ffff, #003BD8);
+  --background-app: linear-gradient(to bottom, #BCC8CD, #2D60AC , #003BD8);
 
   /* Typography */
   --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -70,7 +70,6 @@ body {
   color: var(--text-dark);
   line-height: 1.6;
   overflow-x: hidden;
-  background: linear-gradient(180deg, var(--light-blue) 0%, var(--white) 100%);
 }
 
 img {
@@ -107,7 +106,6 @@ ul {
 }
 
 .highlight {
-  color: var(--primary-blue);
   font-weight: 700;
 }
 
@@ -116,7 +114,8 @@ ul {
   font-weight: 900;
   color: var(--primary-blue);
   display: block;
-  line-height: 1;
+  line-height: 1; 
+  padding: var(--spacing-sm) 0;
 }
 
 /* Animações */
@@ -197,6 +196,7 @@ ul {
   top: 0;
   z-index: 1000;
   animation: fadeIn 0.5s ease;
+  background: #BCC8CD;
 }
 
 .navbar .container {
@@ -237,7 +237,7 @@ ul {
    ========================================== */
 .hero {
   color: var(--white);
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-xs) 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -303,7 +303,7 @@ ul {
 }
 
 .trainers-badge {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(45, 96, 172, 0.40);
   backdrop-filter: blur(10px);
   border-radius: var(--border-radius);
   padding: var(--spacing-md);
@@ -311,19 +311,19 @@ ul {
   border: 2px solid rgba(255, 255, 255, 0.2);
   animation: fadeInUp 0.8s ease 0.6s both;
 }
+.trainers-badge span {
+  font-weight: 700;
+}
 
 /* ==========================================
    5. CTA BUTTON
    ========================================== */
 .cta-button {
   display: inline-block;
-  background: var(--white);
-  color: var(--primary-blue);
   font-weight: 700;
   font-size: var(--font-size-large);
   padding: var(--spacing-md) var(--spacing-xl);
-  border-radius: 50px;
-  box-shadow: var(--shadow-lg);
+  border-radius: 20px;
   transition: var(--transition-medium);
   text-transform: uppercase;
   margin: var(--spacing-lg) 0;
@@ -339,11 +339,6 @@ ul {
   transform: translateY(-1px);
 }
 
-.cta-highlight {
-  color: var(--primary-blue-dark);
-  font-weight: 900;
-}
-
 /* ==========================================
    6. PROGRAM SECTION
    ========================================== */
@@ -352,11 +347,11 @@ ul {
 }
 
 .section-title {
-  font-size: var(--font-size-h2);
+  font-size: var(--font-size-h1);
   font-weight: 700;
   text-align: center;
   margin-bottom: var(--spacing-xl);
-  color: var(--text-dark);
+  color: #fff;
 }
 
 .benefits-grid {
@@ -366,11 +361,15 @@ ul {
 }
 
 .benefit-card {
-  background: var(--light-blue);
+  background:  rgba(45, 96, 172, 0.40);
+  color: var(--white);
   padding: var(--spacing-lg);
   border-radius: var(--border-radius);
   text-align: center;
   transition: var(--transition-medium);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .benefit-card:hover {
@@ -383,18 +382,35 @@ ul {
   margin-bottom: var(--spacing-sm);
 }
 
+.benefit-icon img {
+  width: 100px;
+  height: 100px;
+}
+
 .system-box {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
-  color: var(--white);
+  background: rgba(45, 96, 172, 0.60);
+  color: #BCC8CD;
   padding: var(--spacing-xl);
   border-radius: var(--border-radius);
   margin-top: var(--spacing-xl);
 }
 
 .system-box h3 {
-  font-size: var(--font-size-h3);
+  font-size: var(--font-size-h1);
   margin-bottom: var(--spacing-lg);
   text-align: center;
+  font-family: var(--font-secondary);
+}
+
+.system-illustration {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-max {
+  width: 100px;
+  height: 100px;
+  margin-left: 10px
 }
 
 .system-features {
@@ -730,6 +746,11 @@ ul {
   }
 }
 
+.contener-cta-button .cta-button {
+  background: linear-gradient(135deg, #003BD8, #2D60AC);
+  color: var(--white);
+}
+
 /* ==========================================
    12. RESPONSIVE - DESKTOP (1024px+)
    ========================================== */
@@ -884,5 +905,9 @@ body.menu-open {
 /* Alteraçoes*/
 
 .hero-title {
+  font-family: var(--font-secondary);
+}
+
+.section-title {
   font-family: var(--font-secondary);
 }
