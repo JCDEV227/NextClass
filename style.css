@@ -105,6 +105,13 @@ ul {
   padding: 0 var(--spacing-md);
 }
 
+#content-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .highlight {
   font-weight: 700;
 }
@@ -112,7 +119,7 @@ ul {
 .highlight-number {
   font-size: 4rem;
   font-weight: 900;
-  color:#2D60AC;
+  color: #2D60AC;
   display: block;
   line-height: 1;
   padding: var(--spacing-sm) 0;
@@ -192,7 +199,6 @@ ul {
    ========================================== */
 .navbar {
   padding: var(--spacing-sm) 0;
-  position: sticky;
   top: 0;
   z-index: 1000;
   animation: fadeIn 0.5s ease;
@@ -221,7 +227,7 @@ ul {
 
 .nav-menu a {
   font-weight: 500;
-  color: var(--text-dark);
+  color: #2D60AC;
   padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--border-radius-sm);
   transition: var(--transition-fast);
@@ -236,6 +242,12 @@ ul {
   text-align: left;
   font-size: var(--font-size-large);
   color: var(--white);
+}
+
+.hero-content-main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
 }
 
 /* ==========================================
@@ -326,11 +338,13 @@ ul {
    5. CTA BUTTON
    ========================================== */
 .cta-button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: var(--font-size-large);
-  padding: var(--spacing-md) var(--spacing-xl);
-  border-radius: 20px;
+  padding: 15px;
+  border-radius: 10px;
   transition: var(--transition-medium);
   text-transform: uppercase;
   margin: var(--spacing-lg) 0;
@@ -340,6 +354,9 @@ ul {
 #bt2 {
   background: var(--white);
   color: rgb(45, 96, 172);
+  max-width: 300px;
+  max-height: 50px;
+  font-size: 15px;
 }
 
 .cta-button:hover {
@@ -355,7 +372,11 @@ ul {
    6. PROGRAM SECTION
    ========================================== */
 .program-section {
-  padding: var(--spacing-xxl) 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-left: var(--spacing-xl) 0;
+  margin-right: var(--spacing-xl) 0;
 }
 
 .section-title {
@@ -376,6 +397,7 @@ ul {
 
 .benefit-card {
   background: rgba(45, 96, 172, 0.40);
+  max-width: 90%;
   color: var(--white);
   padding: var(--spacing-lg);
   border-radius: var(--border-radius);
@@ -404,15 +426,15 @@ ul {
 .system-box {
   background: rgba(45, 96, 172, 0.60);
   color: #F4FCFF;
-  padding: var(--spacing-xl);
+  padding: var(--spacing-md);
   border-radius: var(--border-radius);
-  margin-top: var(--spacing-xl);
+  margin: var(--spacing-lg);
 }
 
 .system-box h3 {
-  font-size: var(--font-size-h2);
+  font-size: var(--font-size-h3);
   margin-bottom: var(--spacing-lg);
-  text-align: center;
+  text-align: left;
   font-family: var(--font-secondary);
   line-height: 1.1;
 }
@@ -451,7 +473,8 @@ ul {
    7. FEATURES COMPARISON
    ========================================== */
 .features-section {
-  padding: var(--spacing-xxl) 0;
+  padding: var(--spacing-xs) 0;
+  margin-top: var(--spacing-lg)
 }
 
 .features-grid {
@@ -468,6 +491,9 @@ ul {
   transition: var(--transition-medium);
   background: rgba(45, 96, 172, 0.40);
   color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature-stat:hover {
@@ -532,13 +558,13 @@ ul {
    8. SUCCESS CASES
    ========================================== */
 .cases-section {
-  padding: var(--spacing-xxl) 0;
+  padding: var(--spacing-sm) 0;
 }
 
 .cases-grid {
   display: grid;
   gap: var(--spacing-xl);
-  margin: var(--spacing-xl) 0;
+  margin: var(--spacing-sm) 0;
 }
 
 .case-card {
@@ -762,11 +788,37 @@ ul {
     display: flex;
     justify-content: left;
   }
+
+  .hero-content {
+    max-width: 80%;
+  }
+
+  .system-box {
+    max-width: 80%;
+  }
+
+  .hero-content-main p {
+    font-size: 5rem;
+  }
 }
 
 .contener-cta-button .cta-button {
   background: linear-gradient(135deg, #003BD8, #2D60AC);
   color: var(--white);
+}
+
+.contener-cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+}
+
+contener-cta-button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
 }
 
 /* ==========================================
@@ -811,6 +863,12 @@ ul {
 /* Menu Mobile Toggle */
 @media (max-width: 767px) {
 
+  .text-small {
+    text-align: center;
+
+
+  }
+
   .system-illustration {
     display: flex;
     flex-direction: column;
@@ -823,9 +881,7 @@ ul {
   }
 
   .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    display: hideen;
     background: none;
     border: none;
     cursor: pointer;
@@ -955,5 +1011,54 @@ body.menu-open {
 }
 
 #about-title {
-  color:  #2D60AC;
+  color: #2D60AC;
+}
+
+/* blur */
+
+
+.blob {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.75;
+}
+
+/* Cores */
+.blob1 {
+  background: #ff6ec7;
+  /* rosa neon */
+  top: -50px;
+  left: -50px;
+}
+
+.blob2 {
+  background: #6e8bff;
+  /* azul suave */
+  bottom: -30px;
+  right: -20px;
+}
+
+.blob3 {
+  background: #6effd4;
+  /* verde água */
+  top: 50%;
+  left: 40%;
+}
+
+.text-principal {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.2;
+  animation: fadeInUp 0.8s ease;
+  text-align: center;
+  color: #2D60AC;
+}
+
+.text-principal strong {
+  color: #F4FCFF;
 }
