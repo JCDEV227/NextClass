@@ -167,7 +167,7 @@ function createRippleEffect(event, button) {
 /**
  * Inicializa funcionalidade do menu mobile
  */
-function initMobileMenu() {
+/*function initMobileMenu() {
   // Cria botão hamburger se não existir
   const navbar = document.querySelector('.navbar .container');
 
@@ -185,16 +185,16 @@ function initMobileMenu() {
 
     // Event listener para toggle
     menuToggle.addEventListener('click', toggleMobileMenu);
-  }
+  }*/
 
   // Fecha menu ao clicar fora
   document.addEventListener('click', (e) => {
     const navMenu = document.querySelector('.nav-menu');
     const menuToggle = document.querySelector('.menu-toggle');
 
-    if (navMenu.classList.contains('is-active') && 
-        !navMenu.contains(e.target) && 
-        !menuToggle.contains(e.target)) {
+    if (navMenu.classList.contains('is-active') &&
+      !navMenu.contains(e.target) &&
+      !menuToggle.contains(e.target)) {
       closeMobileMenu();
     }
   });
@@ -344,3 +344,4 @@ function initLazyLoading() {
 if (document.querySelectorAll('img[data-src]').length > 0) {
   initLazyLoading();
 }
+

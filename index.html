@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="NextClass - Acelere suas matrículas e conquiste de 15 a 30 novos alunos">
     <title>NextClass - Aceleração de Matrículas</title>
-    <link rel="icon" type="image/png" href="./assestes/Logo.png">
+
+    <!-- Correção: Pasta 'assets' -->
+    <link rel="icon" type="image/png" href="./assets/Logo.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
-      
-     
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <img src="./assestes/Logo.png" alt="NextClass Logo" class="logo">
+                <img src="./assets/Logo.png" alt="NextClass Logo" class="logo">
             </div>
             <ul class="nav-menu">
                 <li><a href="#inicio">Início</a></li>
@@ -32,81 +36,65 @@
 
     <!-- Hero Section -->
     <header id="inicio" class="hero">
+
         <div class="container" id="content-hero">
             <div class="hero-content">
-            <div class="hero-content-main">
-                <p class="text-principal">Captação de <strong>alunos</strong> para academias de formação, cursos especializados e formações profissionais.</p>
-            </div>
-
-                <div class="trainers-badge">
-                    <p>Vamos conseguir <strong>15 a 30 novos alunos</strong> para as tuas formações nos próximos 30 dias sem fazer descontos. Apenas de tunta de inscrição - <span>Ou não pagas.</span></p>
+                <div class="hero-content-principal">
+                    <div class="hero-content-main">
+                        <!-- Classe hero-title aplicada -->
+                        <h1 class="hero-title text-principal">
+                            Vamos conseguir 15 a 30 novos alunos para as tuas formações nos próximos 30 dias sem fazer
+                            descontos. Apenas de taxa de inscrição <br> - Ou não pagas.</br>
+                        </h1>
+                        <p class="hero-description">
+                            <strong>+5 Formadores</strong> já encheram as turmas com esta metodologia. </br> E tu podes
+                            ser o próximo.
+                        </p>
+                        <div class="cta-button-container" id="bt-1">
+                            <a target="_blank" href="https://form.respondi.app/LdhyykEE" class="cta-button">
+                                AGENDAR DIAGNÓSTICO GRATUITO
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- Correção: Caminho da imagem -->
+                        <img src="./assets/photo.png" alt="Ilustração de Formadores" class="hero-image">
+                    </div>
                 </div>
 
-                <div class="trainers-badge">
-                    <p><strong>+5 Formadores</strong> já encheram as turmas com esta metodologia. E tu podes ser o próximo.</p>
-                </div>
+                <!-- Correção: Classe padronizada cta-button-container -->
 
-                <div class="contener-cta-button">
-                    <a target="_blank" href="https://form.respondi.app/LdhyykEE" class="cta-button" id="bt2">
-                        AGENDAR DIAGNÓSTICO <span class="cta-highlight">GRATUITO</span>
-                    </a>
-                </div>
             </div>
         </div>
     </header>
 
 
     <!-- Program Section -->
-    
     <section id="programa" class="program-section">
-        <!--
         <div class="container">
-            <h2 class="section-title">
-                COM O NOSSO PROGRAMA DE<br>
-                <span class="highlight">ACELERAÇÃO DE MATRÍCULAS:</span>
-            </h2>
+            <div>
 
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <img src="./assestes/transferir.svg" alt="Icone1">
-                    </div> 
-                    <p>Alinhamos sistemas e estratégias que as tuas formações precisam</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <img src="./assestes/undraw_target_d6hf.svg" alt="Icone2">
-                    </div>
-                    <p>Gerenciamos e posicionamos teu conteúdo automaticamente</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <img src="./assestes/undraw_books_wxzz.svg" alt="Icone3">
-                    </div>
-                    <p>Ensinamos técnicas eficazes para vender e captar alunos de qualidade</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <img src="./assestes/undraw_online-ad_t56y.svg" alt="Icone4">
-                    </div>
-                    <p>Ajudamos teu time de vendas e marketing no dia a dia</p>
-                </div>
-            </div>
-        -->
-
-            <div class="system-box">
-                <h3>Construímos todo o sistema que as tuas formações precisam para atrair e matricular novos alunos todos os meses</h3>
                 <div class="system-illustration">
-                    
-                <ul class="system-features">
-                    <li>Posicionamento Profissional nas redes, para seres respeitado, querido;</li>
-                    <li>Funil de captação de novos clientes com estratégia e análises em templates;</li>
-                    <li>Equipa Comercial para atender, qualificar e fechar tuas matrículas;</li>
-                    <li>Cresca com nova expertise e pressupostos;</li>
-                </ul>
-                    <!-- SVG illustration will go here -->
-                    <img class="icon-max" src="./assestes/transferir (1).svg" alt="Illustration">
-            </div>
+                    <ul class="system-features">
+                        <li class="comparison-box-1" >
+                            <img src="./assets/p1.png" alt="NextClass Logo" class="logo" id="icon">
+                            <p>Posicionamento Profissional nas redes, para seres respeitado e querido;</p>
+                        </li>
+                        <li class="comparison-box-1" >
+                            <img src="./assets/p2.png" alt="NextClass Logo" class="logo" id="icon">
+                            <p>Funil de captação de novos clientes com estratégia e análises em templates;</p>
+                        </li>
+                        <li class="comparison-box-1" >
+                            <img src="./assets/p3.png" alt="NextClass Logo" class="logo" id="icon">
+                            <p>Equipa Comercial para atender, qualificar e fechar tuas matrículas;</p>
+                        </li>
+                        <li class="comparison-box-1">
+                            <img src="./assets/p4.png" alt="NextClass Logo" class="logo" id="icon">
+                            <p>Cresça com nova expertise e pressupostos;</p>
+                        </li>
+                    </ul>
+                    <!-- Correção: Caminho da imagem -->
+                </div>
             </div>
         </div>
     </section>
@@ -116,16 +104,20 @@
         <div class="container">
             <div class="features-grid">
                 <div class="feature-stat">
-                    <h3>+5 Clientes ativos</h3>
+                    <h3>+5</h3>
+                    <p>Clientes ativos</p>
                 </div>
                 <div class="feature-stat">
-                    <h3>+180 alunos matriculados com o nosso programa nos últimos meses</h3>
+                    <h3>+180</h3>
+                    <p>alunos matriculados com o nosso programa nos últimos meses</p>
                 </div>
                 <div class="feature-stat">
-                    <h3>10.000.000 Kz Gerados pelos nossos clientes</h3>
+                    <h3>10.000.000 Kz</h3>
+                    <p>Gerados pelos nossos clientes</p>
                 </div>
                 <div class="feature-stat">
-                    <h3>9,8 / 10 Nível de satisfação</h3>
+                    <h3>9,8 / 10</h3>
+                    <p>Nível de satisfação</p>
                 </div>
             </div>
 
@@ -133,9 +125,9 @@
                 <div class="problems">
                     <div class="icon-x">✕</div>
                     <ul>
-                        <li>Para de depender da boca-a-boca.</li>
+                        <li>Para de depender do boca-a-boca.</li>
                         <li>Para de dar descontos para conseguir novos alunos.</li>
-                        <li>Para de despertar um surto para encher as turmas.</li>
+                        <li>Para de ter surtos para encher as turmas.</li>
                     </ul>
                 </div>
                 <div class="solutions">
@@ -143,16 +135,18 @@
                     <ul>
                         <li>Começa a receber alunos novos todos os dias.</li>
                         <li>Aumenta o preço da formação sem perder matrículas.</li>
-                        <li>Envia as turmas com previsibilidade.</li>
-                        <li>Cresce com nova expertise e pressupostos.</li>
+                        <li>Enche as turmas com previsibilidade.</li>
+                        <li>Cresce com nova expertise.</li>
                     </ul>
                 </div>
             </div>
-             <div class="content-bt2">
-            <a target="_blank" class="cta-button" id="bt2"  href="https://form.respondi.app/LdhyykEE">
-                AGENDAR DIAGNÓSTICO GRATUITO
-            </a>
-             </div>
+
+            <!-- Correção: Classe padronizada -->
+            <div class="cta-button-container">
+                <a target="_blank" class="cta-button" href="https://wa.link/t5ihcu">
+                    Contacte-nos pelo WhatsApp
+                </a>
+            </div>
         </div>
     </section>
 
@@ -160,52 +154,48 @@
     <section id="casos" class="cases-section">
         <div class="container">
             <h2 class="section-title">CASOS DE SUCESSO</h2>
-            
+
             <div class="cases-grid">
                 <article class="case-card">
                     <div class="case-image">
-                        <img src="./assestes/Dp1.JPG" alt="Lubanzadia Matos">
+                        <img src="./assets/Dp1.JPG" alt="Lubanzadia Matos">
                     </div>
                     <h3 class="case-name">LUBANZADIA MATOS</h3>
-                    <p class="case-subtitle">Empresa de comunicação e Oratória</p>
+                    <p class="case-subtitle">Empresa de Comunicação e Oratória</p>
                     <div class="case-results">
+                        <!-- Correção: Tag <l> substituída por <li> -->
                         <ul>
-                            <l>Evento presencial com mais de <strong>40 participantes</strong></l>
-                            <l>Evento presencial com mais de <strong>40 participantes</strong></l>
-                            <l>Aumentou o <strong>preço da formação</strong> sem perder alunos.</l>
+                            <li>Evento presencial com mais de <strong>40 participantes</strong></li>
+                            <li>Aumentou o <strong>preço da formação</strong> sem perder alunos.</li>
                         </ul>
-                        <p class="case-quote">"Tudo com a nossa metodologia."</p>
+                        <span class="case-quote">"Tudo com a nossa metodologia."</span>
                     </div>
-                    <div class="rating">
-                        ⭐⭐⭐⭐⭐
-                    </div>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
                 </article>
 
                 <article class="case-card">
                     <div class="case-image">
-                        <img src="./assestes/Dp2.JPG" alt="Dâmila Almeida">
+                        <img src="./assets/Dp2.JPG" alt="Dâmila Almeida">
                     </div>
                     <h3 class="case-name">DÂMILA ALMEIDA</h3>
                     <p class="case-subtitle">Formação em Consultoria</p>
                     <div class="case-results">
                         <ul>
-                            <l><strong>28 novos</strong> alunos em 30 dias.</l>
-                            <l><strong>3.000.000 Kz</strong> faturados.</l>
-                            <l>Sem descontos. Sem indicações.</l>
+                            <li><strong>28 novos</strong> alunos em 30 dias.</li>
+                            <li><strong>3.000.000 Kz</strong> faturados.</li>
+                            <li>Sem descontos. Sem indicações.</li>
                         </ul>
-                        <p class="case-quote">"Tudo com a nossa metodologia."</p>
+                        <span class="case-quote">"Tudo com a nossa metodologia."</span>
                     </div>
-                    <div class="rating">
-                        ⭐⭐⭐⭐⭐
-                    </div>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
                 </article>
             </div>
 
             <div class="guarantee-box">
                 <h3>GARANTIA DE 30 DIAS - SEM RISCO</h3>
                 <p class="guarantee-text">
-                    SE NÃO TE CONSEGUIRMOS NOVOS ALUNOS EM 30 DIAS... 
-                    <span class="highlight">TU NÃO PAGAS.</span>
+                    SE NÃO TE CONSEGUIRMOS NOVOS ALUNOS EM 30 DIAS...
+                    <strong>TU NÃO PAGAS.</strong>
                 </p>
             </div>
         </div>
@@ -214,23 +204,28 @@
     <!-- About CEO -->
     <section id="sobre" class="about-section">
         <div class="container">
-            <h2 class="section-title" id="about-title" >SOBRE O CEO</h2>
-            
+            <h2 class="section-title" id="about-title">SOBRE O CEO</h2>
+
             <div class="about-content">
                 <div class="ceo-image">
-                    <img src="./assestes/Ceo.png" alt="Ludmilo Bartolomeu">
+                    <img src="./assets/Ceo.png" alt="Ludmilo Bartolomeu">
                 </div>
                 <div class="ceo-bio">
-                    <p><strong>Ludmilo Bartolomeu</strong> é o fundador e CEO da empresa, com mais de <strong>cerca de 5 anos</strong> de experiência em marketing digital. Atuou nos <strong>sectores de Serviços, Varejo/Retalho e Infoprodutos</strong>, de 6 empresas diferentes. Já ajudou diversos empreendedores a alcançarem seus resultados através de estratégias de vendas, estruturadas e orientadas.</p>
-                    
-                    <p>Foi o criador da <strong>Metodologia de Aceleração de Matrículas</strong>, ajudando formadores e centros de formação a conseguirem resultados expressivos num menor espaço através de estratégias de vendas estruturadas e orientadas.</p>
+                    <p><strong>Ludmilo Bartolomeu</strong> é o fundador e CEO da empresa, com <strong>cerca de 5
+                            anos</strong> de experiência em marketing digital. Atuou nos <strong>sectores de Serviços,
+                            Varejo/Retalho e Infoprodutos</strong> de 6 empresas diferentes.</p>
+
+                    <p>Foi o criador da <strong>Metodologia de Aceleração de Matrículas</strong>, ajudando formadores e
+                        centros de formação a conseguirem resultados expressivos num menor espaço de tempo através de
+                        estratégias de vendas estruturadas e orientadas.</p>
                 </div>
             </div>
 
-            <div class="content-bt2">
-            <a target="_blank"  href="https://form.respondi.app/LdhyykEE" class="cta-button" id="bt3" >
-                AGENDAR DIAGNÓSTICO GRATUITO
-            </a>
+            <!-- Correção: Classe padronizada -->
+            <div class="cta-button-container">
+                <a target="_blank" href="https://form.respondi.app/LdhyykEE" class="cta-button">
+                    AGENDAR DIAGNÓSTICO GRATUITO
+                </a>
             </div>
         </div>
     </section>
@@ -239,26 +234,28 @@
     <footer class="footer">
         <div class="container">
             <div class="social-links">
-                <a href="https://instagram.com/nextclass" target="_blank" aria-label="Instagram">
+                <a href="https://www.instagram.com/nextclass.ao?igsh=dWN5cDcwMzFhamhs" target="_blank" aria-label="Instagram">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                     </svg>
                 </a>
-                <a href="https://facebook.com/nextclass" target="_blank" aria-label="Facebook">
+                
+                <a href="https://wa.link/t5ihcu" target="_blank" aria-label="WhatsApp">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                    </svg>
-                </a>
-                <a href="https://wa.me/244900000000" target="_blank" aria-label="WhatsApp">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                     </svg>
                 </a>
             </div>
-            <p class="copyright">© 2025 NextClass</p>
+            <p class="copyright">© 2025 NextClass - Todos os direitos reservados.</p>
         </div>
     </footer>
 
+    <!-- Botão Voltar ao Topo (Funcionalidade extra do CSS) -->
+    <button class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
     <script src="script.js"></script>
 </body>
+
 </html>
