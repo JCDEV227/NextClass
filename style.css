@@ -158,7 +158,6 @@ ul {
   color: var(--accent-blue);
   display: block;
   line-height: 1;
-  padding: var(--spacing-sm) 0;
 }
 
 .text-small {
@@ -172,7 +171,6 @@ ul {
   font-size: var(--font-size-h3);
   font-weight: 700;
   font-family: var(--font-secondary);
-  margin-bottom: var(--spacing-lg);
   line-height: 1.2;
   animation: fadeInUp 0.8s ease;
   text-align: left;
@@ -491,10 +489,10 @@ body.menu-open {
 }
 
 .hero-title {
-  font-size: var(--font-size-h3);
+  font-size: var(--font-size-large);
   font-weight: 900;
   text-transform: uppercase;
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
   line-height: 1.2;
   font-family: var(--font-secondary);
   /* Integrado do final do arquivo original */
@@ -513,14 +511,14 @@ body.menu-open {
 }
 
 .hero-description {
-  margin: var(--spacing-lg) 0;
+  margin: var(--spacing-sm) 0;
   font-size: var(--font-size-large);
   animation: fadeInUp 0.8s ease 0.4s both;
   color: var(--text-dark);
 }
 
 .hero-description p {
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
 }
 
 .trainers-badge {
@@ -921,12 +919,27 @@ body.menu-open {
   }
 
   /* Navigation Desktop */
+  #bt-1 {
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-content-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-title {
+    text-align: center;
+    max-width: 800px;
+    font-size: var(--font-size-h2);
+  }
   .menu-toggle {
     display: hideen;
   }
 
   .hero-image {
-    min-width: 20vw;
+    min-width: 0vw;
   }
 
   .system-features {
@@ -965,7 +978,8 @@ body.menu-open {
   }
 
   .hero-description {
-    text-align: left;
+    text-align: center;
+    max-width: 400px;
   }
 
   .highlight-number {
