@@ -716,7 +716,7 @@ body.menu-open {
 }
 
 .case-card {
-  background: var(--light-blue);
+  background: var(--white);
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: var(--shadow-md);
