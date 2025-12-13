@@ -480,7 +480,7 @@ body.menu-open {
 }
 
 .title {
-  text-align: center;
+  text-align: left;
   font-size: var(--font-size-base);
   font-family: var(--font-secondary);
   max-width: 800px;
@@ -965,6 +965,7 @@ body.menu-open {
 
   .title {
     font-size: var(--font-size-large);
+    text-align: center;
   }
   .menu-toggle {
     display: hideen;
