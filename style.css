@@ -470,6 +470,32 @@ body.menu-open {
   width: 0vw;
 }
 
+#content-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: var(--font-size-base);
+  font-family: var(--font-secondary);
+  max-width: 800px;
+  margin-left: var(--spacing-md);
+  margin-right: var(--spacing-md);
+  animation: fadeInUp 0.8s ease;
+}
+
+.title span {
+  border-radius: 5px;
+  border: 1px solid var(--accent-blue);
+  padding: 2px;
+  color: #2D60AC;
+}
+
 .hero-content-principal {
   display: flex;
   flex-direction: row;
@@ -652,7 +678,7 @@ body.menu-open {
   border-radius: var(--border-radius);
   padding: var(--spacing-sm);
   margin: var(--spacing-sm) 0;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -919,6 +945,8 @@ body.menu-open {
   }
 
   /* Navigation Desktop */
+
+  
   #bt-1 {
     justify-content: center;
     align-items: center;
@@ -933,6 +961,10 @@ body.menu-open {
     text-align: center;
     max-width: 800px;
     font-size: var(--font-size-h2);
+  }
+
+  .title {
+    font-size: var(--font-size-large);
   }
   .menu-toggle {
     display: hideen;
