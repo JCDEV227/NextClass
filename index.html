@@ -21,7 +21,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -223,6 +223,12 @@
                 </article>
             </div>
 
+            <div class="cta-button-container" id="bt-2">
+                <a href="#bt-2" class="cta-button">
+                    AGENDAR DIAGNÓSTICO GRATUITO
+                </a>
+            </div>
+
             <div class="guarantee-box">
                 <h3>GARANTIA DE 30 DIAS - SEM RISCO</h3>
                 <p class="guarantee-text">
@@ -260,7 +266,9 @@
 
             <!-- Correção: Classe padronizada -->
             <div class="cta-button-container">
-                <a target="_blank" href="https://form.respondi.app/LdhyykEE" class="cta-button" onclick="event.preventDefault(); fbq('track', 'Lead'); setTimeout(function(){ window.location.href='https://form.respondi.app/LdhyykEE'; }, 300);" id="bt-2">
+                <a target="_blank" href="https://form.respondi.app/LdhyykEE" class="cta-button"
+                    onclick="event.preventDefault(); fbq('track', 'Lead'); setTimeout(function(){ window.location.href='https://form.respondi.app/LdhyykEE'; }, 300);"
+                    id="bt-2">
                     AGENDAR DIAGNÓSTICO GRATUITO
                 </a>
             </div>
